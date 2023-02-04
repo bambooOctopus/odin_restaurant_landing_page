@@ -666,6 +666,22 @@ reserveAnchor.href = "#";
 headerLinks.appendChild(reserveAnchor);
 contentHeader.appendChild(headerLinks);
 
+const contentBody = document.createElement("div");
+contentBody.classList.add("content-body");
+
+const contentFooter = document.createElement("div");
+contentFooter.classList.add("content-footer");
+
+// contentFooter.appendChild(KitchenOne);
+
+
+
+
+
+contentDiv.appendChild(contentHeader);
+contentDiv.appendChild(contentBody);
+contentDiv.appendChild(contentFooter);
+
 
 
 // const aboutLink = document.createElement("a");
@@ -687,7 +703,7 @@ contentHeader.appendChild(headerLinks);
 // const contentFooter = document.createElement("div");
 // contentFooter.classList.add("content-footer");
 
-contentDiv.appendChild(contentHeader);
+
 // contentDiv.appendChild(contentBody);
 // contentDiv.appendChild(contentFooter);
 
