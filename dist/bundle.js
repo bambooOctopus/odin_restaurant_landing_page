@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n\n}\n\n.content-header {\n    padding-top: 2rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n}\n\n.content-body {\n    background-color: gray;\n    \n}\n\n\n\n.content-footer {\n    min-height: 200px;\n    width: 100%;\n\n    background-color: red;\n\n    \n  }\n\n\n.kitchen-two {\n    height: 350px;\n    \n    \n}\n\n.info-div {\n    background-color: black;\n    height: 350px;\n    width: 100%;\n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n\n}\n\n.content-header {\n    padding: 1rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n}\n\n.content-body {\n    background-color: gray;\n\n    padding: 6rem 40rem;\n    font-size: 20px;\n    \n}\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    background-color: red;\n\n    display: flex;\n    justify-content: space-around;\n\n    \n  }\n\n\n.kitchen-pic {\n    height: 300px;   \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -590,10 +590,10 @@ const kitchenTwo = new Image();
 // const footerDiv = document.createElement("div");
 
 
-// kitchenOne.src = KitchenOne;
-// kitchenOne.classList.add("kitchen-two");
-// kitchenTwo.src = KitchenTwo;
-// kitchenTwo.classList.add("kitchen-two");
+kitchenOne.src = _kitchenOne_jpg__WEBPACK_IMPORTED_MODULE_1__;
+kitchenOne.classList.add("kitchen-pic");
+kitchenTwo.src = _kitchenTwo_jpg__WEBPACK_IMPORTED_MODULE_2__;
+kitchenTwo.classList.add("kitchen-pic");
 
 // const infoDiv = document.createElement("div");
 // infoDiv.classList.add("info-div");
@@ -669,10 +669,29 @@ contentHeader.appendChild(headerLinks);
 const contentBody = document.createElement("div");
 contentBody.classList.add("content-body");
 
+const bodyCopy = document.createElement("p");
+bodyCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
+contentBody.appendChild(bodyCopy);
+
 const contentFooter = document.createElement("div");
 contentFooter.classList.add("content-footer");
 
-// contentFooter.appendChild(KitchenOne);
+const infoDiv = document.createElement("div");
+infoDiv.classList.add("info-div");
+infoDiv.textContent = "restaurant title";
+
+const awardDiv = document.createElement("div");
+awardDiv.classList.add("award-div");
+awardDiv.textContent = "awards";
+
+
+contentFooter.appendChild(infoDiv);
+contentFooter.appendChild(kitchenOne);
+contentFooter.appendChild(awardDiv);
+
+
+
+
 
 
 

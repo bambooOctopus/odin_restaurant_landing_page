@@ -15,7 +15,7 @@
 }
 
 .content-header {
-    padding-top: 2rem;
+    padding: 1rem;
     background-color: green;
     height: 10%;
     display: flex;
@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 40%;
+    margin-right: 2rem;
 }
 
 .header-links a {
@@ -39,31 +40,57 @@
 
 .content-body {
     background-color: gray;
+
+    padding: 6rem 40rem;
+    font-size: 20px;
     
 }
 
 
 
 .content-footer {
-    min-height: 200px;
+    max-height: 300px;
     width: 100%;
-
     background-color: red;
+
+    display: flex;
+    justify-content: space-around;
 
     
   }
 
 
-.kitchen-two {
-    height: 350px;
-    
-    
+.kitchen-pic {
+    height: 300px;   
 }
+
+.kitchen-2 {
+    width: 90%;
+}
+
 
 .info-div {
     background-color: black;
-    height: 350px;
+    color: white;
+    font-size: 20px;
+    min-height: 100%;
     width: 100%;
+    
+
+    display: flex;
+    padding-left: 1rem;
+    text-align: bottom;
+
+    
+}
+
+.award-div {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    min-height: 100%;
+    width: 100%;
+    
 
     display: flex;
     padding-left: 1rem;

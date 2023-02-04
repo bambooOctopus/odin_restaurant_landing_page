@@ -8,10 +8,10 @@ const kitchenTwo = new Image();
 // const footerDiv = document.createElement("div");
 
 
-// kitchenOne.src = KitchenOne;
-// kitchenOne.classList.add("kitchen-two");
-// kitchenTwo.src = KitchenTwo;
-// kitchenTwo.classList.add("kitchen-two");
+kitchenOne.src = KitchenOne;
+kitchenOne.classList.add("kitchen-pic");
+kitchenTwo.src = KitchenTwo;
+kitchenTwo.classList.add("kitchen-pic");
 
 // const infoDiv = document.createElement("div");
 // infoDiv.classList.add("info-div");
@@ -87,10 +87,29 @@ contentHeader.appendChild(headerLinks);
 const contentBody = document.createElement("div");
 contentBody.classList.add("content-body");
 
+const bodyCopy = document.createElement("p");
+bodyCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
+contentBody.appendChild(bodyCopy);
+
 const contentFooter = document.createElement("div");
 contentFooter.classList.add("content-footer");
 
-// contentFooter.appendChild(KitchenOne);
+const infoDiv = document.createElement("div");
+infoDiv.classList.add("info-div");
+infoDiv.textContent = "restaurant title";
+
+const awardDiv = document.createElement("div");
+awardDiv.classList.add("award-div");
+awardDiv.textContent = "awards";
+
+
+contentFooter.appendChild(infoDiv);
+contentFooter.appendChild(kitchenOne);
+contentFooter.appendChild(awardDiv);
+
+
+
+
 
 
 
