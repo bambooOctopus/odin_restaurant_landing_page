@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;  
+   
+}
+
+#content {
+    min-height: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-header {
+    padding-top: 2rem;
+    background-color: green;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.content-body {
+    background-color: gray;
+    
+}
+
+
+
+.content-footer {
+    min-height: 200px;
+    width: 100%;
+
+    background-color: red;
+
+    
+  }
+
+
+.kitchen-two {
+    height: 350px;
+    
+    
+}
+
+.info-div {
+    background-color: black;
+    height: 350px;
+    width: 100%;
+
+    display: flex;
+    padding-left: 1rem;
+    text-align: bottom;
+
+    
+}
