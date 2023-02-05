@@ -94,7 +94,9 @@ contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
 contentDiv.appendChild(contentFooter);
 
-//link Functionality
+homeFunction();
+
+//event listeners
 let homeBtn = document.getElementById("home-btn");
 homeBtn.addEventListener("click", homeFunction);
 

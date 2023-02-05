@@ -345,12 +345,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(18), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(19), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.content-header {\n    padding: 1rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n}\n\n.content-body {\n    background-color: gray;\n    padding: 2rem 5rem;\n    width: 40%;\n    font-size: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;    \n}\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    background-color: red;\n    display: flex;\n    justify-content: space-around;   \n  }\n\n\n.kitchen-pic {\n    height: 300px;   \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n@font-face {\n    font-family: \"Aboreto\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff');  \n    font-weight: 600; \n    font-style: normal;  \n}\n\n@font-face {\n    font-family: \"Avro\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');  \n    font-weight: 400; \n    font-style: normal;  \n}\n\n  \n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.content-header {\n    padding: 1rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n    font-family: 'Aboreto';\n}\n\n\n.content-body {\n    background-color: gray;\n    padding: 4rem 5rem;\n    width: 40%;\n    font-size: 22px;\n    font-family: \"Avro\";\n    line-height: 1.5;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;  \n    \n    \n}\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    background-color: red;\n    display: flex;\n    justify-content: space-around;   \n  }\n\n\n.kitchen-pic {\n    height: 300px;   \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -511,7 +518,7 @@ const aboutFunction = () => {
     const aboutDiv = document.createElement("div");
     aboutDiv.id = "aboutDiv";
     const aboutCopy = document.createElement("p");
-    aboutCopy.textContent = "about content; the story of how the restuarant started and by whom, etc";
+    aboutCopy.textContent = "The French Laundry is a three-Michelin star French and Californian cuisine restaurant located in Yountville, California, in the Napa Valley. Sally Schmitt opened The French Laundry in 1978 and designed her menus around local, seasonal ingredients; she was a visionary chef and pioneer of California cuisine. Since 1994 the chef and owner of The French Laundry is Thomas Keller. The restaurant building dates from 1900 and was added to the National Register of Historic Places in 1978.";
     aboutDiv.appendChild(aboutCopy);
     contentBody.appendChild(aboutDiv);
 }
@@ -564,6 +571,49 @@ const clearContentBody = () => {
 
 
 
+/***/ }),
+/* 17 */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ }),
+/* 18 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "7c5655d7b7541650e02d.ttf";
+
+/***/ }),
+/* 19 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "e3d3d53c44db025c4592.ttf";
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -590,6 +640,9 @@ const clearContentBody = () => {
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -662,6 +715,32 @@ const clearContentBody = () => {
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			0: 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -776,7 +855,9 @@ contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
 contentDiv.appendChild(contentFooter);
 
-//link Functionality
+(0,_homeModule__WEBPACK_IMPORTED_MODULE_3__.homeFunction)();
+
+//event listeners
 let homeBtn = document.getElementById("home-btn");
 homeBtn.addEventListener("click", _homeModule__WEBPACK_IMPORTED_MODULE_3__.homeFunction);
 
