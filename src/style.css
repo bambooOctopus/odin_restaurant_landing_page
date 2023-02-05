@@ -131,15 +131,24 @@
 
 #email-form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label {
+    margin-bottom: -45rem;
 }
 
 .text-field {
     padding: .3rem .5rem;
     height: 2rem;
+    margin-bottom: -27rem;
+    
 }
 
 .submit-btn {
     height: 2rem;
     padding: .3rem .5rem;
+    margin-bottom: 12rem;
 }
+

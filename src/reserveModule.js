@@ -13,7 +13,8 @@ const reserveFunction = () => {
     const form = document.createElement("form");
     form.id = "email-form"
     const formLabel = document.createElement("label");
-    formLabel.textContent = "enter email";
+    formLabel.textContent = "enter email for reservation";
+    formLabel.classList.add("label")
     const textField = document.createElement("input");
     textField.classList.add("text-field")
     const submitBtn = document.createElement("button");
@@ -24,6 +25,7 @@ const reserveFunction = () => {
     form.appendChild(formLabel);
     form.appendChild(textField);
     form.appendChild(submitBtn);
+    console.log(form);
     formDiv.appendChild(form);
 
 
