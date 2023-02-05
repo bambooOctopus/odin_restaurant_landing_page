@@ -1,6 +1,10 @@
 import './style.css';
 import KitchenOne from './kitchenOne.jpg';
 import KitchenTwo from './kitchenTwo.jpg';
+import { homeFunction } from './homeModule';
+import { aboutFunction } from './aboutModule';
+import { reserveFunction } from './reserveModule';
+
 
 const kitchenOne = new Image();
 const kitchenTwo = new Image();
@@ -47,10 +51,25 @@ contentHeader.appendChild(headerLinks);
 
 const contentBody = document.createElement("div");
 contentBody.classList.add("content-body");
+contentBody.id = "content-body";
 
-const bodyCopy = document.createElement("p");
-bodyCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
-contentBody.appendChild(bodyCopy);
+
+
+
+
+const aboutDiv = document.createElement("div");
+aboutDiv.id = "aboutDiv";
+const aboutCopy = document.createElement("p");
+aboutCopy.textContent = "about content; the story of how the restuarant started and by whom, etc";
+aboutDiv.appendChild(aboutCopy);
+contentBody.appendChild(aboutDiv);
+
+const reserveDiv = document.createElement("div");
+reserveDiv.id = "reserveDiv";
+const reserveCopy = document.createElement("p");
+reserveCopy.textContent = "this is a reserve form asking for email";
+reserveDiv.appendChild(reserveCopy);
+contentBody.appendChild(reserveDiv);
 
 const contentFooter = document.createElement("div");
 contentFooter.classList.add("content-footer");
@@ -79,3 +98,7 @@ contentFooter.appendChild(awardDiv);
 contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
 contentDiv.appendChild(contentFooter);
+
+homeFunction();
+aboutFunction();
+reserveFunction();

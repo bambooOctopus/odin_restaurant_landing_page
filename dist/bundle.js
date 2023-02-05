@@ -467,6 +467,55 @@ module.exports = __webpack_require__.p + "7cb7b1a08ee35132a485.jpg";
 
 module.exports = __webpack_require__.p + "248b2e25ab565448f852.jpg";
 
+/***/ }),
+/* 13 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "homeFunction": () => (/* binding */ homeFunction)
+/* harmony export */ });
+const homeFunction = () => {
+    const contentBody = document.getElementById("content-body");
+    const homeDiv = document.createElement("div");
+    homeDiv.id = "homeDiv";
+    const homeCopy = document.createElement("p");
+    homeCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
+    homeDiv.appendChild(homeCopy);
+    contentBody.appendChild(homeDiv);
+    
+};
+
+
+
+/***/ }),
+/* 14 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "aboutFunction": () => (/* binding */ aboutFunction)
+/* harmony export */ });
+const aboutFunction = () => {
+    console.log("aboutFunction");
+}
+
+
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "reserveFunction": () => (/* binding */ reserveFunction)
+/* harmony export */ });
+const reserveFunction = () => {
+    console.log("reserveFunction");
+}
+
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -580,6 +629,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _kitchenOne_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _kitchenTwo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _homeModule__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _aboutModule__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
+/* harmony import */ var _reserveModule__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(15);
+
+
+
+
 
 
 
@@ -629,10 +685,25 @@ contentHeader.appendChild(headerLinks);
 
 const contentBody = document.createElement("div");
 contentBody.classList.add("content-body");
+contentBody.id = "content-body";
 
-const bodyCopy = document.createElement("p");
-bodyCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
-contentBody.appendChild(bodyCopy);
+
+
+
+
+const aboutDiv = document.createElement("div");
+aboutDiv.id = "aboutDiv";
+const aboutCopy = document.createElement("p");
+aboutCopy.textContent = "about content; the story of how the restuarant started and by whom, etc";
+aboutDiv.appendChild(aboutCopy);
+contentBody.appendChild(aboutDiv);
+
+const reserveDiv = document.createElement("div");
+reserveDiv.id = "reserveDiv";
+const reserveCopy = document.createElement("p");
+reserveCopy.textContent = "this is a reserve form asking for email";
+reserveDiv.appendChild(reserveCopy);
+contentBody.appendChild(reserveDiv);
 
 const contentFooter = document.createElement("div");
 contentFooter.classList.add("content-footer");
@@ -661,6 +732,10 @@ contentFooter.appendChild(awardDiv);
 contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
 contentDiv.appendChild(contentFooter);
+
+(0,_homeModule__WEBPACK_IMPORTED_MODULE_3__.homeFunction)();
+(0,_aboutModule__WEBPACK_IMPORTED_MODULE_4__.aboutFunction)();
+(0,_reserveModule__WEBPACK_IMPORTED_MODULE_5__.reserveFunction)();
 })();
 
 /******/ })()
