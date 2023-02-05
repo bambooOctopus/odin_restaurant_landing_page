@@ -72,6 +72,13 @@
     
 }
 
+#homeDiv {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
 
 
 .content-footer {

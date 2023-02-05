@@ -6,6 +6,11 @@ const reserveFunction = () => {
     const reserveDiv = document.createElement("div");
     reserveDiv.id = "reserveDiv";
     const reserveCopy = document.createElement("p");
+
+    //form goes here
+    
+
+
     reserveCopy.textContent = "this is a reserve form asking for email";
     reserveDiv.appendChild(reserveCopy);
     contentBody.appendChild(reserveDiv);

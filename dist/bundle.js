@@ -357,7 +357,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n@font-face {\n    font-family: \"Aboreto\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff');  \n    font-weight: 600; \n    font-style: normal;  \n}\n\n@font-face {\n    font-family: \"Avro\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');  \n    font-weight: 400; \n    font-style: normal;  \n}\n\n  \n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.content-header {\n    padding: 1rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n    font-family: 'Aboreto';\n}\n\n\n.content-body {\n    background-color: gray;\n    padding: 4rem 5rem;\n    width: 40%;\n    font-size: 22px;\n    font-family: \"Avro\";\n    line-height: 1.5;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;  \n    \n    \n}\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    background-color: red;\n    display: flex;\n    justify-content: space-around;   \n  }\n\n\n.kitchen-pic {\n    height: 300px;   \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n@font-face {\n    font-family: \"Aboreto\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff');  \n    font-weight: 600; \n    font-style: normal;  \n}\n\n@font-face {\n    font-family: \"Avro\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');  \n    font-weight: 400; \n    font-style: normal;  \n}\n\n  \n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.content-header {\n    padding: 1rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n    font-family: 'Aboreto';\n}\n\n\n.content-body {\n    background-color: gray;\n    padding: 4rem 5rem;\n    width: 40%;\n    font-size: 22px;\n    font-family: \"Avro\";\n    line-height: 1.5;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;  \n    \n    \n}\n\n#homeDiv {\n    display: flex;\n    flex-direction: column;\n    \n}\n\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    background-color: red;\n    display: flex;\n    justify-content: space-around;   \n  }\n\n\n.kitchen-pic {\n    height: 300px;   \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -490,11 +490,11 @@ const homeFunction = () => {
     const contentBody = document.getElementById("content-body");
     const homeDiv = document.createElement("div");
     homeDiv.id = "homeDiv";
-    const homeCopy = document.createElement("p");
-    homeCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
-    homeDiv.appendChild(homeCopy);
+    const homeTitle = document.createElement("h2");
+    homeTitle.textContent = "The French Laundry";    
+    homeDiv.appendChild(homeTitle);    
     contentBody.appendChild(homeDiv);
-    console.log("that the home btn from the moduel")
+    
     
     
 };
@@ -542,6 +542,11 @@ const reserveFunction = () => {
     const reserveDiv = document.createElement("div");
     reserveDiv.id = "reserveDiv";
     const reserveCopy = document.createElement("p");
+
+    //form goes here
+    
+
+
     reserveCopy.textContent = "this is a reserve form asking for email";
     reserveDiv.appendChild(reserveCopy);
     contentBody.appendChild(reserveDiv);
