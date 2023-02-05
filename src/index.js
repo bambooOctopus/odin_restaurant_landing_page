@@ -105,6 +105,8 @@ aboutBtn.addEventListener("click", aboutFunction);
 
 let reserveBtn = document.getElementById("reserve-btn");
 reserveBtn.addEventListener("click", reserveFunction);
+
+
     
 
 

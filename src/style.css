@@ -128,3 +128,18 @@
 
     
 }
+
+#email-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-field {
+    padding: .3rem .5rem;
+    height: 2rem;
+}
+
+.submit-btn {
+    height: 2rem;
+    padding: .3rem .5rem;
+}
