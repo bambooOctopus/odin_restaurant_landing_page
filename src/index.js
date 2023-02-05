@@ -6,13 +6,13 @@ import { aboutFunction } from './aboutModule';
 import { reserveFunction } from './reserveModule';
 
 
-const kitchenOne = new Image();
-const kitchenTwo = new Image();
+// const kitchenOne = new Image();
+// const kitchenTwo = new Image();
 
-kitchenOne.src = KitchenOne;
-kitchenOne.classList.add("kitchen-pic");
-kitchenTwo.src = KitchenTwo;
-kitchenTwo.classList.add("kitchen-pic");
+// kitchenOne.src = KitchenOne;
+// kitchenOne.classList.add("kitchen-pic");
+// kitchenTwo.src = KitchenTwo;
+// kitchenTwo.classList.add("kitchen-pic");
 
 const contentDiv = document.getElementById("content");
 
@@ -66,21 +66,21 @@ contentBody.id = "content-body";
 
 
 
-const contentFooter = document.createElement("div");
-contentFooter.classList.add("content-footer");
+// const contentFooter = document.createElement("div");
+// contentFooter.classList.add("content-footer");
 
-const infoDiv = document.createElement("div");
-infoDiv.classList.add("info-div");
-infoDiv.textContent = "restaurant title";
+// const infoDiv = document.createElement("div");
+// infoDiv.classList.add("info-div");
+// infoDiv.textContent = "restaurant title";
 
-const awardDiv = document.createElement("div");
-awardDiv.classList.add("award-div");
-awardDiv.textContent = "awards";
+// const awardDiv = document.createElement("div");
+// awardDiv.classList.add("award-div");
+// awardDiv.textContent = "awards";
 
 
-contentFooter.appendChild(infoDiv);
-contentFooter.appendChild(kitchenOne);
-contentFooter.appendChild(awardDiv);
+//contentFooter.appendChild(infoDiv);
+//contentFooter.appendChild(kitchenOne);
+//contentFooter.appendChild(awardDiv);
 
 
 
@@ -92,7 +92,7 @@ contentFooter.appendChild(awardDiv);
 
 contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
-contentDiv.appendChild(contentFooter);
+//contentDiv.appendChild(contentFooter);
 
 homeFunction();
 

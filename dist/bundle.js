@@ -357,7 +357,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n@font-face {\n    font-family: \"Aboreto\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff');  \n    font-weight: 600; \n    font-style: normal;  \n}\n\n@font-face {\n    font-family: \"Avro\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');  \n    font-weight: 400; \n    font-style: normal;  \n}\n\n  \n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.content-header {\n    padding: 1rem;\n    background-color: green;\n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n    font-family: 'Aboreto';\n}\n\n\n.content-body {\n    background-color: gray;\n    padding: 4rem 5rem;\n    width: 40%;\n    font-size: 22px;\n    font-family: \"Avro\";\n    line-height: 1.5;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;  \n    \n    \n}\n\n#homeDiv {\n    display: flex;\n    flex-direction: column;\n    \n}\n\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    background-color: red;\n    display: flex;\n    justify-content: space-around;   \n  }\n\n\n.kitchen-pic {\n    height: 300px;   \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    background-color: black;\n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n#email-form {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n\n.label {\n    margin-bottom: -45rem;\n}\n\n.text-field {\n    padding: .3rem .5rem;\n    height: 2rem;\n    margin-bottom: -27rem;\n    \n}\n\n.submit-btn {\n    height: 2rem;\n    padding: .3rem .5rem;\n    margin-bottom: 12rem;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    padding: 0;\n    margin: 0;\n    height: 100%;  \n   \n}\n\n@font-face {\n    font-family: \"Aboreto\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format('woff');  \n    font-weight: 600; \n    font-style: normal;  \n}\n\n@font-face {\n    font-family: \"Avro\";  \n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format('woff');  \n    font-weight: 400; \n    font-style: normal;  \n}\n\n  \n#content {\n    min-height: 100%;\n    position: relative;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    background-color: rgb(247, 243, 239);\n\n}\n\n.content-header {\n    padding: 1rem;\n    \n    height: 10%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n\n}\n\n.header-links {\n    display: flex;\n    justify-content: space-evenly;\n    width: 40%;\n    margin-right: 2rem;\n}\n\n.header-links a {\n    text-decoration: none;\n    color: black;\n    font-size: 25px;\n    font-weight: 400;\n    font-family: 'Aboreto';\n}\n\n\n.content-body {\n    \n    padding: 4rem 5rem;\n    width: 40%;\n    height: 40vh;\n    font-size: 22px;\n    font-family: \"Avro\";\n    line-height: 1.5;\n    text-align: center;\n    display: flex;\n    align-items: center;\n    justify-content: center;  \n    \n    \n}\n\n#homeDiv {\n    display: flex;\n    flex-direction: column;\n    \n}\n\n\n\n\n.content-footer {\n    max-height: 300px;\n    width: 100%;\n    \n    display: flex;\n    justify-content: space-around;   \n  }\n\n\n.kitchen-pic {\n    height: 300px; \n    margin-top: 6rem;  \n}\n\n.kitchen-2 {\n    width: 90%;\n}\n\n\n.info-div {\n    \n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n.award-div {\n    \n    color: white;\n    font-size: 20px;\n    min-height: 100%;\n    width: 100%;\n    \n\n    display: flex;\n    padding-left: 1rem;\n    text-align: bottom;\n\n    \n}\n\n#email-form {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\n\n.label {\n    margin-bottom: -45rem;\n}\n\n.text-field {\n    padding: .3rem .5rem;\n    height: 2rem;\n    margin-bottom: -27rem;\n    \n}\n\n.submit-btn {\n    height: 2rem;\n    padding: .3rem .5rem;\n    margin-bottom: 12rem;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -483,16 +483,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "homeFunction": () => (/* binding */ homeFunction)
 /* harmony export */ });
 /* harmony import */ var _clearContentBody__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _kitchenOne_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+
 
 
 const homeFunction = () => {
-    (0,_clearContentBody__WEBPACK_IMPORTED_MODULE_0__.clearContentBody)();
+    const kitchenOne = new Image();
+    kitchenOne.src = _kitchenOne_jpg__WEBPACK_IMPORTED_MODULE_1__;
+    kitchenOne.classList.add("kitchen-pic")
+    ;(0,_clearContentBody__WEBPACK_IMPORTED_MODULE_0__.clearContentBody)();
     const contentBody = document.getElementById("content-body");
     const homeDiv = document.createElement("div");
     homeDiv.id = "homeDiv";
     const homeTitle = document.createElement("h2");
     homeTitle.textContent = "The French Laundry";    
-    homeDiv.appendChild(homeTitle);    
+    homeDiv.appendChild(homeTitle); 
+    homeDiv.appendChild(kitchenOne);   
     contentBody.appendChild(homeDiv);
     
     
@@ -573,7 +579,7 @@ const reserveFunction = () => {
 
     
     submitBtn.addEventListener("click", () => {
-    alert("Your request has been sent.");
+    alert("Thank you for your reservation request. You will receive an email shortly with more details.");
     (0,_homeModule__WEBPACK_IMPORTED_MODULE_1__.homeFunction)();
 })
 }
@@ -798,13 +804,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const kitchenOne = new Image();
-const kitchenTwo = new Image();
+// const kitchenOne = new Image();
+// const kitchenTwo = new Image();
 
-kitchenOne.src = _kitchenOne_jpg__WEBPACK_IMPORTED_MODULE_1__;
-kitchenOne.classList.add("kitchen-pic");
-kitchenTwo.src = _kitchenTwo_jpg__WEBPACK_IMPORTED_MODULE_2__;
-kitchenTwo.classList.add("kitchen-pic");
+// kitchenOne.src = KitchenOne;
+// kitchenOne.classList.add("kitchen-pic");
+// kitchenTwo.src = KitchenTwo;
+// kitchenTwo.classList.add("kitchen-pic");
 
 const contentDiv = document.getElementById("content");
 
@@ -858,21 +864,21 @@ contentBody.id = "content-body";
 
 
 
-const contentFooter = document.createElement("div");
-contentFooter.classList.add("content-footer");
+// const contentFooter = document.createElement("div");
+// contentFooter.classList.add("content-footer");
 
-const infoDiv = document.createElement("div");
-infoDiv.classList.add("info-div");
-infoDiv.textContent = "restaurant title";
+// const infoDiv = document.createElement("div");
+// infoDiv.classList.add("info-div");
+// infoDiv.textContent = "restaurant title";
 
-const awardDiv = document.createElement("div");
-awardDiv.classList.add("award-div");
-awardDiv.textContent = "awards";
+// const awardDiv = document.createElement("div");
+// awardDiv.classList.add("award-div");
+// awardDiv.textContent = "awards";
 
 
-contentFooter.appendChild(infoDiv);
-contentFooter.appendChild(kitchenOne);
-contentFooter.appendChild(awardDiv);
+//contentFooter.appendChild(infoDiv);
+//contentFooter.appendChild(kitchenOne);
+//contentFooter.appendChild(awardDiv);
 
 
 
@@ -884,7 +890,7 @@ contentFooter.appendChild(awardDiv);
 
 contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
-contentDiv.appendChild(contentFooter);
+//contentDiv.appendChild(contentFooter);
 
 (0,_homeModule__WEBPACK_IMPORTED_MODULE_3__.homeFunction)();
 

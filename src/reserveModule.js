@@ -36,7 +36,7 @@ const reserveFunction = () => {
 
     
     submitBtn.addEventListener("click", () => {
-    alert("Your request has been sent.");
+    alert("Thank you for your reservation request. You will receive an email shortly with more details.");
     homeFunction();
 })
 }

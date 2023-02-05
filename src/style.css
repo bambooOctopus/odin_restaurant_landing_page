@@ -27,12 +27,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(247, 243, 239);
 
 }
 
 .content-header {
     padding: 1rem;
-    background-color: green;
+    
     height: 10%;
     display: flex;
     justify-content: center;
@@ -58,9 +59,10 @@
 
 
 .content-body {
-    background-color: gray;
+    
     padding: 4rem 5rem;
     width: 40%;
+    height: 40vh;
     font-size: 22px;
     font-family: "Avro";
     line-height: 1.5;
@@ -84,14 +86,15 @@
 .content-footer {
     max-height: 300px;
     width: 100%;
-    background-color: red;
+    
     display: flex;
     justify-content: space-around;   
   }
 
 
 .kitchen-pic {
-    height: 300px;   
+    height: 300px; 
+    margin-top: 6rem;  
 }
 
 .kitchen-2 {
@@ -100,7 +103,7 @@
 
 
 .info-div {
-    background-color: black;
+    
     color: white;
     font-size: 20px;
     min-height: 100%;
@@ -115,7 +118,7 @@
 }
 
 .award-div {
-    background-color: black;
+    
     color: white;
     font-size: 20px;
     min-height: 100%;
