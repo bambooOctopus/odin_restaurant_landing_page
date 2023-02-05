@@ -1,4 +1,7 @@
+import { clearContentBody } from "./clearContentBody";
+
 const homeFunction = () => {
+    clearContentBody();
     const contentBody = document.getElementById("content-body");
     const homeDiv = document.createElement("div");
     homeDiv.id = "homeDiv";
@@ -6,6 +9,8 @@ const homeFunction = () => {
     homeCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
     homeDiv.appendChild(homeCopy);
     contentBody.appendChild(homeDiv);
+    console.log("that the home btn from the moduel")
+    
     
 };
 

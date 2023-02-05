@@ -475,7 +475,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "homeFunction": () => (/* binding */ homeFunction)
 /* harmony export */ });
+/* harmony import */ var _clearContentBody__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+
+
 const homeFunction = () => {
+    (0,_clearContentBody__WEBPACK_IMPORTED_MODULE_0__.clearContentBody)();
     const contentBody = document.getElementById("content-body");
     const homeDiv = document.createElement("div");
     homeDiv.id = "homeDiv";
@@ -483,6 +487,8 @@ const homeFunction = () => {
     homeCopy.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque alias nulla ipsum numquam dolores modi ut quisquam facilis! Explicabo voluptas temporibus eveniet saepe enim voluptatum fuga tempora tempore eius hic!"
     homeDiv.appendChild(homeCopy);
     contentBody.appendChild(homeDiv);
+    console.log("that the home btn from the moduel")
+    
     
 };
 
@@ -496,8 +502,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "aboutFunction": () => (/* binding */ aboutFunction)
 /* harmony export */ });
+/* harmony import */ var _clearContentBody__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+
+
 const aboutFunction = () => {
-    console.log("aboutFunction");
+    (0,_clearContentBody__WEBPACK_IMPORTED_MODULE_0__.clearContentBody)();
+    const contentBody = document.getElementById("content-body");
+    const aboutDiv = document.createElement("div");
+    aboutDiv.id = "aboutDiv";
+    const aboutCopy = document.createElement("p");
+    aboutCopy.textContent = "about content; the story of how the restuarant started and by whom, etc";
+    aboutDiv.appendChild(aboutCopy);
+    contentBody.appendChild(aboutDiv);
 }
 
 
@@ -510,8 +526,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "reserveFunction": () => (/* binding */ reserveFunction)
 /* harmony export */ });
+/* harmony import */ var _clearContentBody__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+
+
 const reserveFunction = () => {
-    console.log("reserveFunction");
+    (0,_clearContentBody__WEBPACK_IMPORTED_MODULE_0__.clearContentBody)();
+    const contentBody = document.getElementById("content-body");
+    const reserveDiv = document.createElement("div");
+    reserveDiv.id = "reserveDiv";
+    const reserveCopy = document.createElement("p");
+    reserveCopy.textContent = "this is a reserve form asking for email";
+    reserveDiv.appendChild(reserveCopy);
+    contentBody.appendChild(reserveDiv);
+}
+
+
+
+/***/ }),
+/* 16 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "clearContentBody": () => (/* binding */ clearContentBody)
+/* harmony export */ });
+const clearContentBody = () => {
+    const contentBody = document.getElementById("content-body")
+    const contentDiv = contentBody.lastElementChild
+    if (contentDiv === null) {
+        return;
+    }
+    else {
+        contentBody.removeChild(contentDiv);
+    };
+    
 }
 
 
@@ -656,32 +704,36 @@ contentHeader.classList.add("content-header");
 const headerLinks = document.createElement("div");
 headerLinks.classList.add("header-links");
 
-
+//make home link
 const homeAnchor = document.createElement("a");
 const homeLink = document.createTextNode("home");
 homeAnchor.appendChild(homeLink);
 homeAnchor.title = "home";
 homeAnchor.href = "#";
+homeAnchor.id = "home-btn";
 
-headerLinks.appendChild(homeAnchor);
-
+//make about linnk
 const aboutAnchor = document.createElement("a");
 const aboutLink = document.createTextNode("about");
 aboutAnchor.appendChild(aboutLink);
 aboutAnchor.title = "about";
 aboutAnchor.href = "#";
+aboutAnchor.id = "about-btn";
 
-headerLinks.appendChild(aboutAnchor);
-
-
+//make reserve link
 const reserveAnchor = document.createElement("a");
 const reserveLink = document.createTextNode("reserve");
 reserveAnchor.appendChild(reserveLink);
 reserveAnchor.title = "reservations";
 reserveAnchor.href = "#";
+reserveAnchor.id = "reserve-btn";
 
+//add them to header-links div
+headerLinks.appendChild(homeAnchor);
+headerLinks.appendChild(aboutAnchor);
 headerLinks.appendChild(reserveAnchor);
 contentHeader.appendChild(headerLinks);
+
 
 const contentBody = document.createElement("div");
 contentBody.classList.add("content-body");
@@ -691,19 +743,10 @@ contentBody.id = "content-body";
 
 
 
-const aboutDiv = document.createElement("div");
-aboutDiv.id = "aboutDiv";
-const aboutCopy = document.createElement("p");
-aboutCopy.textContent = "about content; the story of how the restuarant started and by whom, etc";
-aboutDiv.appendChild(aboutCopy);
-contentBody.appendChild(aboutDiv);
 
-const reserveDiv = document.createElement("div");
-reserveDiv.id = "reserveDiv";
-const reserveCopy = document.createElement("p");
-reserveCopy.textContent = "this is a reserve form asking for email";
-reserveDiv.appendChild(reserveCopy);
-contentBody.appendChild(reserveDiv);
+
+
+
 
 const contentFooter = document.createElement("div");
 contentFooter.classList.add("content-footer");
@@ -733,9 +776,27 @@ contentDiv.appendChild(contentHeader);
 contentDiv.appendChild(contentBody);
 contentDiv.appendChild(contentFooter);
 
-(0,_homeModule__WEBPACK_IMPORTED_MODULE_3__.homeFunction)();
-(0,_aboutModule__WEBPACK_IMPORTED_MODULE_4__.aboutFunction)();
-(0,_reserveModule__WEBPACK_IMPORTED_MODULE_5__.reserveFunction)();
+//link Functionality
+let homeBtn = document.getElementById("home-btn");
+homeBtn.addEventListener("click", _homeModule__WEBPACK_IMPORTED_MODULE_3__.homeFunction);
+
+let aboutBtn = document.getElementById("about-btn");
+aboutBtn.addEventListener("click", _aboutModule__WEBPACK_IMPORTED_MODULE_4__.aboutFunction);
+
+let reserveBtn = document.getElementById("reserve-btn");
+reserveBtn.addEventListener("click", _reserveModule__WEBPACK_IMPORTED_MODULE_5__.reserveFunction);
+    
+
+
+
+//homeFunction();
+//aboutFunction();
+//reserveFunction();
+
+
+
+
+
 })();
 
 /******/ })()
